@@ -21,8 +21,8 @@ public class NumUniqueEmails_929 {
             String right = s.substring(i);
             if(left.contains("+")){
                 left = left.substring(0,s.indexOf("+"));
-               left = left.replace(".","");
             }
+            left = left.replace(".","");
             set.add(left+right);
         }
         return set.size();
